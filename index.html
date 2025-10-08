@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Tharadon (Note)</title>
+  <link rel="stylesheet" href="myprofile.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">NOTE</div>
+    <ul class="nav-links">
+      <li><a href="#home">หน้าแรก</a></li>
+      <li><a href="#about">เกี่ยวกับ</a></li>
+      <li><a href="#skills">ทักษะ</a></li>
+      <li><a href="#projects">ผลงาน</a></li>
+      <li><a href="#contact">ติดต่อ</a></li>
+    </ul>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </nav>
+
+  <section id="home" class="hero" data-aos="fade-down">
+    <h1>สวัสดีครับผมชื่อ ธราดล สาขา(โน๊ต)ยินดีที่คุณได้เข้ามาชมเว็ปไซต์ของผม</h1>
+    <div class="profile-img">
+      <img src="40c2d7a7-9d78-4e29-bffd-22192d4258cb.jpg" alt="Profile">
+    </div>
+    <p>ตอนนี้ผมศึกษาอยู่ที่โรงเรียนพรรณาวุฒาจารย์ในชั้นมัธยมศึกษา ปีที่6</p>
+    <a href="#about" class="btn">ดูเพิ่มเติม</a>
+  </section>
+
+  <section id="about" data-aos="fade-up">
+    <h2>เกี่ยวกับผม</h2>
+    <p>
+      สวัสดีครับผมนายธราดล สาขา ตัวของผมนั้นผมชอบการพัฒนาเว็บไซต์และออกแบบเว็บครับ   
+      เว็บนี้สร้างขึ้นเพื่อแสดงความสามารถในการใช้ HTML, CSS, JavaScript ของผมครับ
+    </p>
+  </section>
+
+  <section id="skills" data-aos="fade-right">
+    <h2>ทักษะ (Skills)</h2>
+    <div class="skills">
+      <div class="skill-card" data-aos="zoom-in">
+        <h3>HTML</h3>
+        
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>CSS</h3>
+        
+      </div>
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>JavaScript</h3>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" data-aos="fade-left">
+    <h2>ผลงาน (Projects)</h2>
+    <div class="projects">
+      <div class="project-card" data-aos="flip-left">
+        <img src="สกรีนช็อต 2025-10-07 123211.png" alt="Honkai Project">
+        <h3>คำนวณเพชร Honkai Star Rail</h3>
+        <button class="btn view-btn" data-project="1">ดูผลงาน</button>
+      </div>
+
+      <div class="project-card" data-aos="flip-left" data-aos-delay="100">
+        <img src="สกรีนช็อต 2025-10-07 122933.png" alt="Your Name">
+        <h3>เว็บประวัติ gojo satoru จากเรื่องมหาเวทย์ผนึกมาร</h3>
+        <button class="btn view-btn" data-project="2">ดูผลงาน</button>
+      </div>
+
+      <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+        <img src="สกรีนช็อต 2025-10-07 122619.png" alt="Web Game">
+        <h3>เกมทายสถานที่อนิเมะ</h3>
+        <button class="btn view-btn" data-project="3">ดูผลงาน</button>
+      </div>
+
+      <div class="project-card" data-aos="flip-left" data-aos-delay="300">
+        <img src="สกรีนช็อต 2025-10-07 122438.png" alt="ทายตัวละคร">
+        <h3>เว็ปทายตัวละครจากhonkai star rail</h3>
+        <button class="btn view-btn" data-project="4">ดูผลงาน</button>
+      </div>
+
+      <div class="project-card" data-aos="flip-left" data-aos-delay="400">
+        <img src="สกรีนช็อต 2025-10-07 122729.png" alt="NodeJS Project">
+        <h3>เว็ปฟังเพลง your name</h3>
+        <button class="btn view-btn" data-project="5">ดูผลงาน</button>
+      </div>
+
+      <div class="project-card" data-aos="flip-left" data-aos-delay="500">
+        <img src="สกรีนช็อต 2025-10-07 210137.png" alt="relice">
+        <h3>เว็ปสุ่มrelice</h3>
+        <button class="btn view-btn" data-project="6">ดูผลงาน</button>
+      </div>
+
+      <div class="project-card" data-aos="flip-left" data-aos-delay="600">
+        <img src="สกรีนช็อต 2025-10-07 130250.png" alt="Quiz Web">
+        <h3>เว็บคำนวณหน่วยกิตและเกรดเฉลี่ย</h3>
+        <button class="btn view-btn" data-project="7">ดูผลงาน</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="project-modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3 id="modal-title"></h3>
+      <img id="modal-img" src="" alt="Project Image">
+      <p id="modal-desc"></p>
+      <a id="modal-link" href="#" target="_blank" class="btn">ไปที่เว็บไซต์</a>
+    </div>
+  </div>
+
+  <footer id="contact" data-aos="fade-up">
+    <h2>ติดต่อผม</h2>
+    <p>📞 โทร: 096-779-4306</p>
+    <p>📧 Email: tharadonsaka@gmail.com</p>
+    <p>🌐 Instagram: <a href="https://www.instagram.com/taradolsaka?igsh=b3FpMXB3ZjZoOWQ0" target="_blank">@taradolsaka</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/share/177D4RyEvN/" target="_blank">Taradol saka</a></p>
+    <p>github: <a href="https://github.com/peba44896-stack" target="_blank">peba44896-stack</a></p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="myprofile.js"></script>
+</body>
+</html>
+
+
+
+
+
